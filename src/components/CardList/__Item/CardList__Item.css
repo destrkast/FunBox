@@ -1,0 +1,9 @@
+.card-list__item {
+  margin: 0 40px 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .card-list__item {
+    margin: 0 20px 20px;
+  }
+}

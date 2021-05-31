@@ -14,12 +14,8 @@
 .card-content {
   position: relative;
   box-sizing: border-box;
-  height: 480px;
   max-width: 320px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   background-image: linear-gradient(
     135deg,
     transparent 30px,
@@ -82,27 +78,26 @@
 }
 
 .card-description {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  padding-top: 20px;
   padding-left: 48px;
 }
 
 .description__line1 {
-  padding-top: 20px;
   padding-left: 3px;
   color: #666666;
   font-size: 1rem;
 }
 
 .description__line2 {
-  margin: 6px 0 0 0;
+  margin: 6px 0 0;
   color: #000000;
   font-size: 3rem;
   font-weight: 700;
 }
 
 .description__line3 {
+  display: block;
+  margin-bottom: 15px;
   padding-left: 3px;
   color: #000000;
   font-size: 24px;
@@ -110,12 +105,14 @@
 }
 
 .description__line4 {
-  padding-left: 3px;
-  padding-top: 15px;
+  margin: 0 0 17px;
+  padding: 0 0 0 3px;
   list-style-type: none;
   color: #666666;
   font-size: 0.875rem;
   font-weight: 400;
+  line-height: 1rem;
+  min-height: 3rem;
 }
 
 .li__numbers {

@@ -7,7 +7,7 @@ import CardList__Item from './components/CardList/__Item/CardList__Item';
 function App() {
   return (
     <div className="App">
-      <h1>Ты сегодня покормил кота?</h1>
+      <h1 className='page-title'>Ты сегодня покормил кота?</h1>
       <CardList>
         {cards.map((card) => (
           <CardList__Item key={card.id}>

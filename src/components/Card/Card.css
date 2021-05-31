@@ -313,37 +313,13 @@
 }
 
 .card__input:disabled ~ .card-content::before {
-  content: '';
-  position: absolute;
-  top: 0px;
-  right: -4px;
-  bottom: unset;
-  left: unset;
-  display: block;
-  height: 20px;
-  width: calc(100% - 43px);
-  border-top: 4px solid #b3b3b3;
-  border-right: 4px solid #b3b3b3;
-  border-left: none;
-  border-bottom: none;
-  border-top-right-radius: 12px;
+  border-left-color: #b3b3b3;
+  border-bottom-color: #b3b3b3;
 }
 
 .card__input:disabled ~ .card-content::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  top: unset;
-  right: unset;
-  display: block;
-  height: calc(100% - 43px);
-  width: 20px;
-  border-left: 4px solid #b3b3b3;
-  border-bottom: 4px solid #b3b3b3;
-  border-top: none;
-  border-right: none;
-  border-bottom-left-radius: 12px;
+  border-top-color: #b3b3b3;
+  border-right-color: #b3b3b3;
 }
 
 .card__input:disabled ~ .card-content .card__image {

@@ -77,25 +77,25 @@
   cursor: pointer;
 }
 
-.card-description {
+.card__description {
   padding-top: 20px;
   padding-left: 48px;
 }
 
-.description__line1 {
+.card__header-text {
   padding-left: 3px;
   color: #666666;
   font-size: 1rem;
 }
 
-.description__line2 {
+.card__title {
   margin: 6px 0 0;
   color: #000000;
   font-size: 3rem;
   font-weight: 700;
 }
 
-.description__line3 {
+.card__taste {
   display: block;
   margin-bottom: 15px;
   padding-left: 3px;
@@ -104,7 +104,7 @@
   font-weight: 700;
 }
 
-.description__line4 {
+.card__features {
   margin: 0 0 17px;
   padding: 0 0 0 3px;
   list-style-type: none;
@@ -115,7 +115,7 @@
   min-height: 3rem;
 }
 
-.li__numbers {
+.card__features-highlighted-text {
   font-weight: 700;
 }
 
@@ -124,7 +124,7 @@
   width: 100%;
 }
 
-.circle {
+.card__weight {
   position: absolute;
   bottom: 12px;
   right: 12px;
@@ -139,35 +139,35 @@
   text-align: center;
 }
 
-.weight {
+.card__weight-value {
   font-weight: 400;
   font-size: 42px;
 
   color: #ffffff;
 }
-.unit {
+.card__weight-unit {
   margin-top: -8px;
   font-weight: 400;
   font-size: 21px;
   color: #ffffff;
 }
 
-.description__bottom__div {
+.card__footer {
   display: flex;
   justify-content: center;
   font-size: 13px;
 }
 
-.description__bottom {
+.card__footer-text {
   color: #ffffff;
   text-align: center;
 }
 
-.description__bottom_disabled {
+.card__footer-text_disabled {
   color: #ffff66;
 }
 
-.click-sign {
+.card__footer-label {
   font-family: inherit;
   font-size: inherit;
   color: #1698d9;
@@ -185,7 +185,7 @@
   background-size: 6px 1px;
 }
 
-.blue__dot {
+.card__footer-dot {
   color: #1698d9;
   font-weight: 700;
 }
@@ -214,20 +214,20 @@
   border-right-color: #2ea8e6;
 }
 
-.card-content:hover .circle {
+.card-content:hover .card__weight {
   background-color: #2ea8e6;
 }
 
-.card-content:hover ~ * .click-sign {
+.card-content:hover ~ * .card__footer-label {
   color: #2ea8e6;
   background-image: linear-gradient(to right, #2ea8e6 75%, transparent 75%);
 }
 
-.card-content:hover ~ * .blue__dot {
+.card-content:hover ~ * .card__footer-dot {
   color: #2ea8e6;
 }
 
-.click-sign:hover {
+.card__footer-label:hover {
   color: #2ea8e6;
   background-image: linear-gradient(to right, #2ea8e6 75%, transparent 75%);
 }
@@ -256,7 +256,7 @@
   border-right-color: #d91667;
 }
 
-.card-content_selected .circle {
+.card-content_selected .card__weight {
   background-color: #d91667;
 }
 
@@ -284,11 +284,11 @@
   border-right-color: #e52e7a;
 }
 
-.card-content_selected:hover .circle {
+.card-content_selected:hover .card__weight {
   background-color: #e52e7a;
 }
 
-.description__line1_cat {
+.card__header-text_cat {
   color: #e62e7a;
 }
 
@@ -323,15 +323,15 @@
   opacity: 0.5;
 }
 
-.card__input:disabled ~ .card-content .circle {
+.card__input:disabled ~ .card-content .card__weight {
   background-color: #b3b3b3;
 }
 
-.card__input:disabled ~ .card-content .description__line1,
-.card__input:disabled ~ .card-content .description__line2,
-.card__input:disabled ~ .card-content .description__line3,
-.card__input:disabled ~ .card-content .description__line4,
-.card__input:disabled ~ .card-content .li__numbers {
+.card__input:disabled ~ .card-content .card__header-text,
+.card__input:disabled ~ .card-content .card__title,
+.card__input:disabled ~ .card-content .card__taste,
+.card__input:disabled ~ .card-content .card__features,
+.card__input:disabled ~ .card-content .card__features-highlighted-text {
   color: #b3b3b3;
 }
 

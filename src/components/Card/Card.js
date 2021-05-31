@@ -57,22 +57,22 @@ function Card(props) {
           onMouseEnter={labelMouseOverHandler}
           onMouseLeave={labelMouseOutHandler}
         />
-        <div className="card-description">
+        <div className="card__description">
           {isSelected && isHovered && !isMouseOut ? (
-            <span className="description__line1 description__line1_cat">
+            <span className="card__header-text card__header-text_cat">
               Котэ не одобряет?
             </span>
           ) : (
-            <span className="description__line1">{description}</span>
+            <span className="card__header-text">{description}</span>
           )}
 
-          <h2 className="description__line2">{name}</h2>
-          <span className="description__line3">{taste}</span>
-          <ul className="description__line4">
+          <h2 className="card__title">{name}</h2>
+          <span className="card__taste">{taste}</span>
+          <ul className="card__features">
             {features.map((feature) => (
               <li key={feature.text}>
                 {feature.highlightedText && (
-                  <span className="li__numbers">{`${feature.highlightedText} `}</span>
+                  <span className="card__features-highlighted-text">{`${feature.highlightedText} `}</span>
                 )}
                 {feature.text}
               </li>
@@ -97,26 +97,26 @@ function Card(props) {
         </picture>
 
         {/* <img src={imageCat} alt="cat" /> */}
-        <div className="circle">
-          <span className="weight">{weight.value}</span>
-          <span className="unit">{weight.unit}</span>
+        <div className="card__weight">
+          <span className="card__weight-value">{weight.value}</span>
+          <span className="card__weight-unit">{weight.unit}</span>
         </div>
       </div>
-      <div className="description__bottom__div">
+      <div className="card__footer">
         {isAvailable && !isSelected && (
-          <p className="description__bottom">
+          <p className="card__footer-text">
            Чего сидишь? Порадуй котэ,{' '}
-            <label htmlFor={`input-${id}`} className="click-sign">
+            <label htmlFor={`input-${id}`} className="card__footer-label">
               купи
             </label>
-            <span className="blue__dot">.</span>
+            <span className="card__footer-dot">.</span>
           </p>
         )}
         {isAvailable && isSelected && (
-          <p className="description__bottom">{footerText.selected}</p>
+          <p className="card__footer-text">{footerText.selected}</p>
         )}
         {!isAvailable && (
-          <p className="description__bottom description__bottom_disabled">
+          <p className="card__footer-text card__footer-text_disabled">
             {footerText.disabled}
           </p>
         )}
